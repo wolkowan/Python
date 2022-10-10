@@ -7,7 +7,8 @@
 # print(not (x or y or z))
 # print((not x) and(not y)and(not z))
 
-
+print()
+print('Утверждение истинно, если все входящие комбинации  выдадут  true')
 for x in [True, False]:
     for y in [True, False]:
         for z in [True, False]:

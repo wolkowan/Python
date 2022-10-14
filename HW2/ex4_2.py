@@ -1,9 +1,15 @@
-# 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N]. Найдите произведение 
-# элементов на указанных позициях. 
-# Позиции хранятся в файле file.txt в одной строке одно число.
-
 import random
 N=int(input("Задайте количество элементов в списке:"))
+
+file = open("file2.txt", 'w')
+file.write(str(random.randint(0, N+1)))
+file.write('\n')
+file.writelines(str(random.randint(0, N+1)))
+file.write('\n')
+file.writelines(str(random.randint(0, N+1)))
+file.write('\n')
+file.close()
+
 
 
 #Создаю список случайных элементов:
@@ -14,7 +20,7 @@ print(f'Cписок из {N} элементов, заполненных числ
 print()
 
 #Открываю файл в режиме чтения, получаю номера позиций элементов, вычисляю произведение элементов
-file=open('file.txt', 'r')
+file=open('file2.txt', 'r')
 product=1
 print('Содержание файла:')
 for i in file:
@@ -23,6 +29,6 @@ for i in file:
         product*=s[int(i)]
     
 file.close()
-
+print()
 print(f'Произведение заданных элементов равно {product} ')
 

@@ -8,6 +8,6 @@ d={}
 sum=0
 for i in range(1, n+1):
     d[i]=round((1+1/i)**i,2)
-    sum+=(1+1/i)**i
+    sum+=d[i]
 print(d)
 print(round(sum, 2))

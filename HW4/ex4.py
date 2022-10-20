@@ -14,7 +14,7 @@ k = int(input("Задайте натуральную степень К от 1 д
 
 ind = []
 for i in range(k+1):
-    ind.append(random.randint(0, 101))
+    ind.append(random.randint(0, 100))
 print(f'Сформировынный случайным образом список коэффициентов:  {ind}')
 
 

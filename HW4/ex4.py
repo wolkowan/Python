@@ -14,7 +14,7 @@ k = int(input("Задайте натуральную степень К от 1 д
 
 ind = []
 for i in range(k+1):
-    ind.append(random.randint(0, 100))
+    ind.append(random.randint(0, 3))
 print(f'Сформировынный случайным образом список коэффициентов:  {ind}')
 
 
@@ -34,7 +34,14 @@ itog_to_file = s_to_file + str(ind[-1])+" = 0"
 print(itog_to_file)
 print("Результат сохранен в файл file_HW4.txt")
 
+
+
+with open('file.txt', 'w', encoding = "utf-8") as file:
+    file.write('текст')
+
+
 file = open("file_HW4.txt", 'a')
 file.write(itog_to_file)
 file.write('\n')
+
 file.close()

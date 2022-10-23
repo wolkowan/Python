@@ -19,7 +19,7 @@ while True:
     sum += a
     n += 1
     pi_new = sum*4
-    if abs(a) < d:
+    if abs(a)*4 < d:
         break
 
 print(f'Вычисленное значение Пи (формула Лейбница) равно {pi_new}')

@@ -3,25 +3,23 @@
 # Пример
 # 	а) AAAAAAFDDCCCCCCCAEEEEEEEEEEEEEEEEE => 6A1F2D7C1A17E
 
-def rle(str):
-    result = []
+def RLE_IN(s):
+    result = ''
     count = 0
- 
-    if len(str) == 1:
-        result.append((1, str[0]))
-        return result
- 
-    for i in range(len(str)):
+    for i in range(len(s)):
         count += 1
-        if (i + 1) == len(str) or str[i] != str[i + 1]:
-            result.append((count,str[i]))
-            count = 0
-            
+        if (i + 1) == len(s) or s[i] != s[i + 1]:
+            result += str(count) + s[i]
+            count = 0     
     return result
+def RLE_OUT(s):
+    result = ''
+    for i in range(len(s)):
+        
  
 
  
-str = "AAAAAAFDDCCCCCCCAEEEEEEEEEEEEEEEEE"
-print(rle(str))
+s = "AAAAAAFDDCCCCCCCAEEEEEEEEEEEEEEEEE"
+print(RLE_IN(s))
  
     

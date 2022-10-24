@@ -31,3 +31,7 @@ for i in range(len(ind)-1):
             s += str(ind[i])+"x" + dict[k-i]+' + '
 itog = s+str(ind[-1])+" = 0"
 print(itog)
+print("Результат сохранен в файл file_HW4.txt")
+
+with open('file_HW4.txt', 'a', encoding = "utf-8") as file:
+    file.write(itog)

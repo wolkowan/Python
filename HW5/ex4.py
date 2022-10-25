@@ -26,13 +26,13 @@ def who_win():
     win = ""
     for i in win_lines:
         if maps[i[0]] == "X" and maps[i[1]] == "X" and maps[i[2]] == "X":
-            win = "Победил игрок 1 (который ходил Х)!"
+            win = "Победил игрок 1 (Х)!"
         if maps[i[0]] == "O" and maps[i[1]] == "O" and maps[i[2]] == "O":
-            win = "Победил игрок 2 (который ходил У)!"        
+            win = "Победил игрок 2 (O)!"        
     return win
  
 i=1
-win='/'#иначе выводится фраза "ничья" при брейках
+
 print_maps()
 while i<10:
     if i%2!=0:

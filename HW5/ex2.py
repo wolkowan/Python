@@ -93,7 +93,7 @@ def Human_VS_Bot():
 
 def Human_VS_Smart_Bot():
     
-    a=100
+    a=2021
     print(f'На столе лежит {a} конфет')
     i=lottery_smart_bot()
     if i==1:

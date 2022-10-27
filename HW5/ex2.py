@@ -93,7 +93,8 @@ def Human_VS_Bot():
 
 def Human_VS_Smart_Bot():
     
-    a=2021
+    a=100
+    
     print(f'На столе лежит {a} конфет')
     i=lottery_smart_bot()
     if i==1:
@@ -136,8 +137,10 @@ def Human_VS_Smart_Bot():
                 if a==0:
                     print("Победа игрока")
             else:
-                if a>28:
+                if a>28 and a%29!=0:
                     step=a%29
+                if a>28 and a%29==0:
+                    step=random.randint(1, 28)
                 else:
                     step=a
                 print(f"Бот берет {step}")

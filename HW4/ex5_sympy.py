@@ -7,3 +7,5 @@ s2='77*x**6 + 43*x**5 + 22*x**2 + 49*x + 33'
 x=Symbol('x')
 s3= collect(s1 + '+' + s2, x)
 print(s3)
+
+

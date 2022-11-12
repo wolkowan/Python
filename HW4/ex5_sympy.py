@@ -1,4 +1,4 @@
-import re
+
 from sympy import Symbol, collect
 
 s1="161*x**6 + 104*x**5 + 33*x**4 + 75*x**3 + 84*x**2 + 130*x + 79"

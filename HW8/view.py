@@ -29,14 +29,6 @@ def view_info():
     choice=input()
     return choice
 
-def del_info():
-    print("""
-        По какому атрибуту будет осуществляться поиск для удаления:
-        1. По id;
-        2. По фамилии;
-        """)
-    choice = input()
-    return choice
 
 def ask_id():
     id=input("Введите id: ")

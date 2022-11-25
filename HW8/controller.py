@@ -16,6 +16,7 @@ def start():
                 model.add()
             case '3':
                 view.printAll()
+
             case '5':
 
                 choice = view.view_info()
@@ -36,20 +37,6 @@ def start():
 
                 elif choice == '2':
                     view.print_row(model.find_by_last_name())
-                else:
-                    print("Такого пункта нет в меню")
-
-
-            case '6':
-
-                choice = view.view_info()
-                if choice == '1':
-                   pass
-
-                elif choice == '2':
-                    pass
-
-
                 else:
                     print("Такого пункта нет в меню")
 

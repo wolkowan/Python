@@ -16,11 +16,11 @@ def newNoteHTML(name, surname, number, info):
 
     style = 'style="font-size:30px;"'
     html = '<html>\n  <head></head>\n  <body>\n'
-    html += '    <p {}>Name is: {} </p>\n' \
+    html += '    <p {}>Name is: {} </p>' \
         .format(style, name)
-    html += '    <p {}>Surename is: {} </p>\n' \
+    html += '    <p {}>Surename is: {} </p>' \
         .format(style, surname)
-    html += '    <p {}>Number is: {}</p>\n' \
+    html += '    <p {}>Number is: {}</p>' \
         .format(style, number)
     html += '    <p {}>Comments: {}</p>\n' \
         .format(style, info)

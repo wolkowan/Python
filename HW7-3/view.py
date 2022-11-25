@@ -4,7 +4,7 @@ def startMenu():
     print('Выберите действие: ')
     print(f"1: Внести новую запись в телефонную книгу;\n2: Вывод всего справочника;\n3: Загрузка базы данных из внешнего источника;\n4: Выход из программы.")
     print()
-    operators = int(input())
+    operators = input()
     return operators
 
 def inputNote():

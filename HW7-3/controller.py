@@ -19,11 +19,11 @@ def start():
         if fileFormat == 1:
             result= view.printAllCSV()
 
-        if fileFormat == 2:
+        elif fileFormat == 2:
             result= view.printAllMd()
-        if fileFormat == 3:
+        elif fileFormat == 3:
             result= view.printAllHtml()
-        if fileFormat == 4:
+        elif fileFormat == 4:
             result= view.printAllTxt()
 
         return result
@@ -33,11 +33,11 @@ def start():
         if fileFormat==1:
             # model.importDataCSV()
             print("в разработке")
-        if fileFormat==2:
+        elif fileFormat==2:
             print("в разработке")
-        if fileFormat==3:
+        elif fileFormat==3:
             print("в разработке")
-        if fileFormat==4:
+        elif fileFormat==4:
             print("в разработке")
 
     elif operators==4:
